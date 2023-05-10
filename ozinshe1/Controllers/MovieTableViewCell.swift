@@ -21,13 +21,16 @@ class MovieTableViewCell: UITableViewCell {
         posterImageView.layer.cornerRadius = 8
         playView.layer.cornerRadius = 8
     }
-        override func setSelected(_ selected: Bool, animated: Bool) {
-            super.setSelected(selected, animated: animated)
-            
-            // Configure the view for the selected state
-        }
-        func setData(movie: String) {
-            posterImageView.image = UIImage(named: movie)
-        }
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+        
+        // Configure the view for the selected state
+    }
+    func setData(movie: String) {
+        posterImageView.image = UIImage(named: movie)
+        
+        nameLabel.text = "Суперкелук Самурык"
+        yearLabel.text = "• 2020 • Телехикая • Мультфильм"
+    }
     }
 
